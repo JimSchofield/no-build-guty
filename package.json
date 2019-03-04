@@ -1,0 +1,15 @@
+{
+  "name": "no-build-guty",
+  "version": "1.0.0",
+  "description": "",
+  "main": "test-block.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "htm": "^2.0.0"
+  }
+}
