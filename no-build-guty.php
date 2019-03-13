@@ -42,6 +42,14 @@ function no_build_blocks_plugin_editor_scripts() {
         [ 'wp-blocks', 'wp-element', 'wp-editor', 'wp-components', 'wp-i18n' ],
         filemtime( plugin_dir_path( __FILE__ ) . 'bio-vanilla.js' ) 
     );
+    
+    // Register bio vanilla example
+    wp_register_script(
+        'no-build-blocks/editor-script4',
+        plugins_url( 'bio-htm.js', __FILE__ ),
+        [ 'wp-blocks', 'wp-element', 'wp-editor', 'wp-components', 'wp-i18n' ],
+        filemtime( plugin_dir_path( __FILE__ ) . 'bio-htm.js' ) 
+    );
  
     // Enqueue block editor styles
     wp_register_style(
@@ -55,6 +63,7 @@ function no_build_blocks_plugin_editor_scripts() {
             'no-build-blocks/editor-script1',
             'no-build-blocks/editor-script2',
             'no-build-blocks/editor-script3',
+            'no-build-blocks/editor-script4',
         ],
         'style' => 'no-build-blocks/stylesheet'   
     ));

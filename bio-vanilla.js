@@ -33,7 +33,7 @@
             return wp.element.createElement(
                 'div',
                 {
-                    className: props.className
+                    className: 'props.className'
                 },
                 [
                     wp.element.createElement(
